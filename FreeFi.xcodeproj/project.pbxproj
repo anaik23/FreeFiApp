@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDDFFE642543C7FE0027969C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE632543C7FE0027969C /* AppDelegate.swift */; };
+		BDDFFE662543C7FE0027969C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE652543C7FE0027969C /* SceneDelegate.swift */; };
+		BDDFFE682543C7FE0027969C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE672543C7FE0027969C /* ViewController.swift */; };
+		BDDFFE6B2543C7FE0027969C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE692543C7FE0027969C /* Main.storyboard */; };
+		BDDFFE6D2543C8010027969C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE6C2543C8010027969C /* Assets.xcassets */; };
+		BDDFFE702543C8010027969C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */; };
+		BDDFFE7B2543C8010027969C /* FreeFiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE7A2543C8010027969C /* FreeFiTests.swift */; };
+		BDDFFE862543C8010027969C /* FreeFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE852543C8010027969C /* FreeFiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDDFFE772543C8010027969C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDFFE582543C7FE0027969C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDDFFE5F2543C7FE0027969C;
+			remoteInfo = FreeFi;
+		};
+		BDDFFE822543C8010027969C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDFFE582543C7FE0027969C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDDFFE5F2543C7FE0027969C;
+			remoteInfo = FreeFi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDDFFE602543C7FE0027969C /* FreeFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDFFE632543C7FE0027969C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDDFFE652543C7FE0027969C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDDFFE672543C7FE0027969C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDDFFE6A2543C7FE0027969C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDDFFE6C2543C8010027969C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDDFFE6F2543C8010027969C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDDFFE712543C8010027969C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDFFE762543C8010027969C /* FreeFiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDFFE7A2543C8010027969C /* FreeFiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFiTests.swift; sourceTree = "<group>"; };
+		BDDFFE7C2543C8010027969C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDFFE812543C8010027969C /* FreeFiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDFFE852543C8010027969C /* FreeFiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFiUITests.swift; sourceTree = "<group>"; };
+		BDDFFE872543C8010027969C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDDFFE5D2543C7FE0027969C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDFFE732543C8010027969C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDFFE7E2543C8010027969C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDDFFE572543C7FE0027969C = {
+			isa = PBXGroup;
+			children = (
+				BDDFFE622543C7FE0027969C /* FreeFi */,
+				BDDFFE792543C8010027969C /* FreeFiTests */,
+				BDDFFE842543C8010027969C /* FreeFiUITests */,
+				BDDFFE612543C7FE0027969C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDDFFE612543C7FE0027969C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFFE602543C7FE0027969C /* FreeFi.app */,
+				BDDFFE762543C8010027969C /* FreeFiTests.xctest */,
+				BDDFFE812543C8010027969C /* FreeFiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDDFFE622543C7FE0027969C /* FreeFi */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFFE632543C7FE0027969C /* AppDelegate.swift */,
+				BDDFFE652543C7FE0027969C /* SceneDelegate.swift */,
+				BDDFFE672543C7FE0027969C /* ViewController.swift */,
+				BDDFFE692543C7FE0027969C /* Main.storyboard */,
+				BDDFFE6C2543C8010027969C /* Assets.xcassets */,
+				BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */,
+				BDDFFE712543C8010027969C /* Info.plist */,
+			);
+			path = FreeFi;
+			sourceTree = "<group>";
+		};
+		BDDFFE792543C8010027969C /* FreeFiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFFE7A2543C8010027969C /* FreeFiTests.swift */,
+				BDDFFE7C2543C8010027969C /* Info.plist */,
+			);
+			path = FreeFiTests;
+			sourceTree = "<group>";
+		};
+		BDDFFE842543C8010027969C /* FreeFiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFFE852543C8010027969C /* FreeFiUITests.swift */,
+				BDDFFE872543C8010027969C /* Info.plist */,
+			);
+			path = FreeFiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDDFFE5F2543C7FE0027969C /* FreeFi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDFFE8A2543C8010027969C /* Build configuration list for PBXNativeTarget "FreeFi" */;
+			buildPhases = (
+				BDDFFE5C2543C7FE0027969C /* Sources */,
+				BDDFFE5D2543C7FE0027969C /* Frameworks */,
+				BDDFFE5E2543C7FE0027969C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeFi;
+			productName = FreeFi;
+			productReference = BDDFFE602543C7FE0027969C /* FreeFi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDDFFE752543C8010027969C /* FreeFiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDFFE8D2543C8010027969C /* Build configuration list for PBXNativeTarget "FreeFiTests" */;
+			buildPhases = (
+				BDDFFE722543C8010027969C /* Sources */,
+				BDDFFE732543C8010027969C /* Frameworks */,
+				BDDFFE742543C8010027969C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDDFFE782543C8010027969C /* PBXTargetDependency */,
+			);
+			name = FreeFiTests;
+			productName = FreeFiTests;
+			productReference = BDDFFE762543C8010027969C /* FreeFiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDDFFE802543C8010027969C /* FreeFiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDFFE902543C8010027969C /* Build configuration list for PBXNativeTarget "FreeFiUITests" */;
+			buildPhases = (
+				BDDFFE7D2543C8010027969C /* Sources */,
+				BDDFFE7E2543C8010027969C /* Frameworks */,
+				BDDFFE7F2543C8010027969C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDDFFE832543C8010027969C /* PBXTargetDependency */,
+			);
+			name = FreeFiUITests;
+			productName = FreeFiUITests;
+			productReference = BDDFFE812543C8010027969C /* FreeFiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDDFFE582543C7FE0027969C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					BDDFFE5F2543C7FE0027969C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					BDDFFE752543C8010027969C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = BDDFFE5F2543C7FE0027969C;
+					};
+					BDDFFE802543C8010027969C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = BDDFFE5F2543C7FE0027969C;
+					};
+				};
+			};
+			buildConfigurationList = BDDFFE5B2543C7FE0027969C /* Build configuration list for PBXProject "FreeFi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDDFFE572543C7FE0027969C;
+			productRefGroup = BDDFFE612543C7FE0027969C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDDFFE5F2543C7FE0027969C /* FreeFi */,
+				BDDFFE752543C8010027969C /* FreeFiTests */,
+				BDDFFE802543C8010027969C /* FreeFiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDDFFE5E2543C7FE0027969C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDFFE702543C8010027969C /* LaunchScreen.storyboard in Resources */,
+				BDDFFE6D2543C8010027969C /* Assets.xcassets in Resources */,
+				BDDFFE6B2543C7FE0027969C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDFFE742543C8010027969C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDFFE7F2543C8010027969C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDDFFE5C2543C7FE0027969C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDFFE682543C7FE0027969C /* ViewController.swift in Sources */,
+				BDDFFE642543C7FE0027969C /* AppDelegate.swift in Sources */,
+				BDDFFE662543C7FE0027969C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDFFE722543C8010027969C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDFFE7B2543C8010027969C /* FreeFiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDFFE7D2543C8010027969C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDFFE862543C8010027969C /* FreeFiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDDFFE782543C8010027969C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDDFFE5F2543C7FE0027969C /* FreeFi */;
+			targetProxy = BDDFFE772543C8010027969C /* PBXContainerItemProxy */;
+		};
+		BDDFFE832543C8010027969C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDDFFE5F2543C7FE0027969C /* FreeFi */;
+			targetProxy = BDDFFE822543C8010027969C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDDFFE692543C7FE0027969C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDFFE6A2543C7FE0027969C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDFFE6F2543C8010027969C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDDFFE882543C8010027969C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDDFFE892543C8010027969C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDDFFE8B2543C8010027969C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abhaynaik.FreeFi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDDFFE8C2543C8010027969C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abhaynaik.FreeFi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDDFFE8E2543C8010027969C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeFiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abhaynaik.FreeFiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFi.app/FreeFi";
+			};
+			name = Debug;
+		};
+		BDDFFE8F2543C8010027969C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeFiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abhaynaik.FreeFiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFi.app/FreeFi";
+			};
+			name = Release;
+		};
+		BDDFFE912543C8010027969C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeFiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abhaynaik.FreeFiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreeFi;
+			};
+			name = Debug;
+		};
+		BDDFFE922543C8010027969C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeFiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abhaynaik.FreeFiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreeFi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDDFFE5B2543C7FE0027969C /* Build configuration list for PBXProject "FreeFi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDFFE882543C8010027969C /* Debug */,
+				BDDFFE892543C8010027969C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDFFE8A2543C8010027969C /* Build configuration list for PBXNativeTarget "FreeFi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDFFE8B2543C8010027969C /* Debug */,
+				BDDFFE8C2543C8010027969C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDFFE8D2543C8010027969C /* Build configuration list for PBXNativeTarget "FreeFiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDFFE8E2543C8010027969C /* Debug */,
+				BDDFFE8F2543C8010027969C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDFFE902543C8010027969C /* Build configuration list for PBXNativeTarget "FreeFiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDFFE912543C8010027969C /* Debug */,
+				BDDFFE922543C8010027969C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDDFFE582543C7FE0027969C /* Project object */;
+}
