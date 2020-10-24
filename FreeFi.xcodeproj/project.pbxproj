@@ -15,6 +15,7 @@
 		BDDFFE702543C8010027969C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */; };
 		BDDFFE7B2543C8010027969C /* FreeFiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE7A2543C8010027969C /* FreeFiTests.swift */; };
 		BDDFFE862543C8010027969C /* FreeFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE852543C8010027969C /* FreeFiUITests.swift */; };
+		BDDFFE972543CB830027969C /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE962543CB830027969C /* Lato */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BDDFFE812543C8010027969C /* FreeFiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDFFE852543C8010027969C /* FreeFiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFiUITests.swift; sourceTree = "<group>"; };
 		BDDFFE872543C8010027969C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDFFE962543CB830027969C /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato; path = ../../../../Downloads/Lato; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BDDFFE692543C7FE0027969C /* Main.storyboard */,
 				BDDFFE6C2543C8010027969C /* Assets.xcassets */,
 				BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */,
+				BDDFFE962543CB830027969C /* Lato */,
 				BDDFFE712543C8010027969C /* Info.plist */,
 			);
 			path = FreeFi;
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDFFE972543CB830027969C /* Lato in Resources */,
 				BDDFFE702543C8010027969C /* LaunchScreen.storyboard in Resources */,
 				BDDFFE6D2543C8010027969C /* Assets.xcassets in Resources */,
 				BDDFFE6B2543C7FE0027969C /* Main.storyboard in Resources */,
