@@ -77,10 +77,24 @@ This app helps you keep track of your finances. It lets you visualize your spend
 ## Schema 
 
 ### Models
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Property      | Type          | Description
+| ------------- | ------------- |-------------
+| fullName      | String        | Users first and last name
+| username      | String        | Email for the user to login
+| password      | String        | Password for the user to login
+| summary       | String        | Gives information about the data analyzed
+| chart         | Graph         | Pie chart to store user entries
+| location      | String        | Used to gather more information about the user
+| salary        | Double        | Used to gather more information about the user
+| houseSize     | Integer       | Used to gather more information about the user
+| age           | Integer       | Used to gather more information about the user
+| date          | DateTime      | To keep track of the date of expense entry
+| homeExp       | Double        | Money spent on rent and home/utility bills
+| foodExp       | Double        | Money spent on food/groceries for the month
+| lifestyleExp  | Double        | Money spent on shopping
+| entertainExp  | Double        | Money spent on movies, vacations, events
+| autoExp       | Double        | Money spent on monthly car payments or lease, car repair servicing/upgrades
+| miscExp       | Double        | Money spent on elsewhere like monthly subcriptions 
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
