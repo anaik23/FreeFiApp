@@ -36,6 +36,7 @@ This app helps you keep track of your finances. It lets you visualize your spend
 - [ ] Users can read and understand what each item means while their filling out their monthly spending data
 - [ ] The app can pull data from their bank/credit card account to automatically fill in their monthly spending amount
 - [ ] Allow with Login in with FaceID
+- [ ] User get a summary of the data produced by their inputs
 
 ### 2. Screen Archetypes
 
@@ -82,7 +83,6 @@ This app helps you keep track of your finances. It lets you visualize your spend
 | fullName      | String        | Users first and last name
 | username      | String        | Email for the user to login
 | password      | String        | Password for the user to login
-| summary       | String        | Gives information about the data analyzed
 | chart         | Graph         | Pie chart to store user entries
 | location      | String        | Used to gather more information about the user
 | salary        | Double        | Used to gather more information about the user
