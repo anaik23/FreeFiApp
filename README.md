@@ -144,5 +144,3 @@ This app helps you keep track of your finances. It lets you visualize your spend
         }
     }
 ```
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
