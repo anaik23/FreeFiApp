@@ -36,6 +36,7 @@ This app helps you keep track of your finances. It lets you visualize your spend
 - [ ] Users can read and understand what each item means while their filling out their monthly spending data
 - [ ] The app can pull data from their bank/credit card account to automatically fill in their monthly spending amount
 - [ ] Allow with Login in with FaceID
+- [ ] User get a summary of the data produced by their inputs
 
 ### 2. Screen Archetypes
 
@@ -75,10 +76,71 @@ This app helps you keep track of your finances. It lets you visualize your spend
 ### [BONUS] Interactive Prototype
 <img src="http://g.recordit.co/bFotbdHJpc.gif" width=250><br>
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+| Property      | Type          | Description
+| ------------- | ------------- |-------------
+| fullName      | String        | Users first and last name
+| username      | String        | Email for the user to login
+| password      | String        | Password for the user to login
+| chart         | Graph         | Pie chart to store user entries
+| location      | String        | Used to gather more information about the user
+| salary        | Double        | Used to gather more information about the user
+| houseSize     | Integer       | Used to gather more information about the user
+| age           | Integer       | Used to gather more information about the user
+| date          | DateTime      | To keep track of the date of expense entry
+| homeExp       | Double        | Money spent on rent and home/utility bills
+| incExp        | Double        | Money spent on insurance
+| foodExp       | Double        | Money spent on food/groceries for the month
+| lifestyleExp  | Double        | Money spent on shopping
+| entertainExp  | Double        | Money spent on movies, vacations, events
+| autoExp       | Double        | Money spent on monthly car payments or lease, car repair servicing/upgrades
+| miscExp       | Double        | Money spent on elsewhere like monthly subcriptions 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Home Screen:
+```swift
+ let query = PFQuery(className:"Charts")
+     query.whereKey("username", equalTo: currentUser)
+     query.includeKeys(["date","homeExp","incExp", "foodExp", "lifestyleExp", "entertainExp","autoExp", "miscExp"])
+     query.limit = 20
+     query.findObjectsInBackground { (charts, error) in
+            if charts != nil {
+                self.charts = charts!
+                self.tableView.reloadData()
+            }
+            
+```
+- Login Screen:
+ ```swift
+@IBAction func onSignIn(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password)
+        { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+            
+        }
+        
+    }
+ ```
+ - Sign Up Screen
+ ```swift
+ @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+            
+        }
+    }
+```
