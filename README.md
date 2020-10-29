@@ -100,13 +100,47 @@ This app helps you keep track of your finances. It lets you visualize your spend
 - Home Screen:
 ```swift
  let query = PFQuery(className:"Charts")
-        query.includeKeys(["date","homeExp","incExp", "foodExp", "lifestyleExp", "entertainExp","autoExp", "miscExp"])
-        query.limit = 20
-        query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
-                self.posts = posts!
+     query.whereKey("username", equalTo: currentUser)
+     query.includeKeys(["date","homeExp","incExp", "foodExp", "lifestyleExp", "entertainExp","autoExp", "miscExp"])
+     query.limit = 20
+     query.findObjectsInBackground { (charts, error) in
+            if charts != nil {
+                self.charts = charts!
                 self.tableView.reloadData()
             }
+            
 ```
+- Login Screen:
+ ```swift
+@IBAction func onSignIn(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password)
+        { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+            
+        }
+        
+    }
+    
+    @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+            
+        }
+    }
+ ```
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
