@@ -16,6 +16,7 @@
 		BDDFFE7B2543C8010027969C /* FreeFiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE7A2543C8010027969C /* FreeFiTests.swift */; };
 		BDDFFE862543C8010027969C /* FreeFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE852543C8010027969C /* FreeFiUITests.swift */; };
 		BDDFFE972543CB830027969C /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE962543CB830027969C /* Lato */; };
+		BDFF6BF5254B7C8A00EE35CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF6BF4254B7C8A00EE35CB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BDDFFE852543C8010027969C /* FreeFiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFiUITests.swift; sourceTree = "<group>"; };
 		BDDFFE872543C8010027969C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDDFFE962543CB830027969C /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato; path = ../../../../Downloads/Lato; sourceTree = "<group>"; };
+		BDFF6BF4254B7C8A00EE35CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				BDDFFE632543C7FE0027969C /* AppDelegate.swift */,
 				BDDFFE652543C7FE0027969C /* SceneDelegate.swift */,
 				BDDFFE672543C7FE0027969C /* ViewController.swift */,
+				BDFF6BF4254B7C8A00EE35CB /* LoginViewController.swift */,
 				BDDFFE692543C7FE0027969C /* Main.storyboard */,
 				BDDFFE6C2543C8010027969C /* Assets.xcassets */,
 				BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFF6BF5254B7C8A00EE35CB /* LoginViewController.swift in Sources */,
 				BDDFFE682543C7FE0027969C /* ViewController.swift in Sources */,
 				BDDFFE642543C7FE0027969C /* AppDelegate.swift in Sources */,
 				BDDFFE662543C7FE0027969C /* SceneDelegate.swift in Sources */,
