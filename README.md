@@ -90,12 +90,23 @@ This app helps you keep track of your finances. It lets you visualize your spend
 | age           | Integer       | Used to gather more information about the user
 | date          | DateTime      | To keep track of the date of expense entry
 | homeExp       | Double        | Money spent on rent and home/utility bills
+| incExp        | Double        | Money spent on insurance
 | foodExp       | Double        | Money spent on food/groceries for the month
 | lifestyleExp  | Double        | Money spent on shopping
 | entertainExp  | Double        | Money spent on movies, vacations, events
 | autoExp       | Double        | Money spent on monthly car payments or lease, car repair servicing/upgrades
 | miscExp       | Double        | Money spent on elsewhere like monthly subcriptions 
 ### Networking
-- [Add list of network requests by screen ]
+- Home Screen:
+```swift
+ let query = PFQuery(className:"Charts")
+        query.includeKeys(["date","homeExp","incExp", "foodExp", "lifestyleExp", "entertainExp","autoExp", "miscExp"])
+        query.limit = 20
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+```
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
