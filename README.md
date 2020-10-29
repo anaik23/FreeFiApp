@@ -127,8 +127,9 @@ This app helps you keep track of your finances. It lets you visualize your spend
         }
         
     }
-    
-    @IBAction func onSignUp(_ sender: Any) {
+ ```
+ ```swift
+ @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
@@ -141,6 +142,6 @@ This app helps you keep track of your finances. It lets you visualize your spend
             
         }
     }
- ```
+```
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
