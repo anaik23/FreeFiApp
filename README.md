@@ -128,6 +128,7 @@ This app helps you keep track of your finances. It lets you visualize your spend
         
     }
  ```
+ - Sign Up Screen
  ```swift
  @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
