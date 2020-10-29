@@ -75,9 +75,12 @@ This app helps you keep track of your finances. It lets you visualize your spend
 ### [BONUS] Interactive Prototype
 <img src="http://g.recordit.co/bFotbdHJpc.gif" width=250><br>
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
