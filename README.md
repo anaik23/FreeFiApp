@@ -11,7 +11,6 @@
 This app helps you keep track of your finances. It lets you visualize your spending habits both in numbers and charts. This app also provides advice based on your prior expenses.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Personal Finance
 - **Mobile:** This app is developed currently for a mobile platform but it has the versatility to be integrated into a website based application.
 - **Story:** Allows people to track their personal finances and be aware of their finacial desisions and habits.
