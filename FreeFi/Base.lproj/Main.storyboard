@@ -54,6 +54,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w87-qT-mVQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFr-er-RYf">
                                 <rect key="frame" x="79" y="735" width="256" height="70"/>
@@ -65,7 +68,7 @@
                                 </state>
                                 <connections>
                                     <action selector="newUserButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNf-0U-KpM"/>
-                                    <segue destination="VlZ-q2-AOb" kind="presentation" identifier="signUpSegue" id="ynr-uu-DC0"/>
+                                    <segue destination="IwU-Sb-XRv" kind="presentation" identifier="signUpSegue" id="ynr-uu-DC0"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="tLj-Sn-n9j">
@@ -84,6 +87,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="9RO-wK-wVB"/>
+                    <connections>
+                        <outlet property="emailField" destination="WyC-Zq-jWg" id="UBt-E5-srd"/>
+                        <outlet property="passwordField" destination="nju-Pz-ch5" id="PVO-KB-2Wr"/>
+                        <segue destination="dt8-59-SxK" kind="presentation" identifier="loginSegue" id="fZC-g3-r20"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,22 +124,6 @@
                                 <color key="textColor" red="0.1764705882352941" green="0.17254901960784313" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeG-HZ-a0c">
-                                <rect key="frame" x="20" y="63" width="26" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                    <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="default"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                    </preferredSymbolConfiguration>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="h6z-KN-PFG"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvt-EN-ec0">
                                 <rect key="frame" x="41" y="239" width="228" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -192,15 +184,25 @@
                         <viewLayoutGuide key="safeArea" id="JgW-nB-Izu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iHg-zP-5H0">
+                        <barButtonItem key="leftBarButtonItem" title="back" style="plain" id="ndC-Qn-A2V">
+                            <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" red="0.1764705882" green="0.17254901959999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="backButton:" destination="VlZ-q2-AOb" id="exd-fg-kKi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="ioL-0M-QaQ" id="VcT-p8-NM6"/>
                         <outlet property="firstNameTextField" destination="fvq-l7-UCk" id="Miu-r2-5Mk"/>
+                        <outlet property="lastNameTextField" destination="TOM-RP-PDE" id="h8M-cN-Ojf"/>
                         <outlet property="passwordTextField" destination="KcC-hR-nDX" id="7q0-Sy-5HF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FX9-GH-kVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485.50724637681162" y="143.97321428571428"/>
+            <point key="canvasLocation" x="650.72463768115949" y="874.55357142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Byd-i3-rK0">
@@ -316,7 +318,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmX-ij-U6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195.6521739130435" y="143.97321428571428"/>
+            <point key="canvasLocation" x="772" y="-231"/>
+        </scene>
+        <!--Home Screen View Controller-->
+        <scene sceneID="q7y-ad-32M">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="wvV-VE-daC" customClass="HomeScreenViewController" customModule="FreeFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hwx-Wv-hUd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RSM-Vl-kGp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yj2-5O-Np2">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="c4z-m1-srr">
+                            <color key="tintColor" red="0.1764705882" green="0.17254901959999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onLogOut:" destination="wvV-VE-daC" id="Fmo-76-bLy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcv-5k-bO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689.8550724637685" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gEf-hD-L35">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="dt8-59-SxK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y1u-zd-j9B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wvV-VE-daC" kind="relationship" relationship="rootViewController" id="mDg-mF-0vL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGg-bf-wrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779.7101449275365" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pHj-Sz-D2c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="IwU-Sb-XRv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gKp-Qu-pjq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VlZ-q2-AOb" kind="relationship" relationship="rootViewController" id="PYW-O6-BTO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BM6-0e-yGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="874.55357142857144"/>
         </scene>
     </scenes>
     <resources>
@@ -324,10 +385,7 @@
         <image name="Rectangle 105" width="179.5" height="33.5"/>
         <image name="Rectangle 106" width="209" height="56.5"/>
         <image name="Rectangle 107" width="114" height="33.5"/>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

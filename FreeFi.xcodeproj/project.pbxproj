@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346A64B22555176200129A62 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 346A64B12555172800129A62 /* Lato */; };
+		346A64C42555179700129A62 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 346A64B12555172800129A62 /* Lato */; };
+		346A64C82555179800129A62 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 346A64B12555172800129A62 /* Lato */; };
 		34E852B5254D103B00531109 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E852B4254D103B00531109 /* SignUpViewController.swift */; };
 		BDDFFE642543C7FE0027969C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE632543C7FE0027969C /* AppDelegate.swift */; };
 		BDDFFE662543C7FE0027969C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE652543C7FE0027969C /* SceneDelegate.swift */; };
-		BDDFFE682543C7FE0027969C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE672543C7FE0027969C /* ViewController.swift */; };
+		BDDFFE682543C7FE0027969C /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFFE672543C7FE0027969C /* HomeScreenViewController.swift */; };
 		BDDFFE6B2543C7FE0027969C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE692543C7FE0027969C /* Main.storyboard */; };
 		BDDFFE6D2543C8010027969C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE6C2543C8010027969C /* Assets.xcassets */; };
 		BDDFFE702543C8010027969C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */; };
@@ -42,6 +45,7 @@
 /* Begin PBXFileReference section */
 		0299653FD29A6D093A7CC30F /* Pods-FreeFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi.release.xcconfig"; path = "Target Support Files/Pods-FreeFi/Pods-FreeFi.release.xcconfig"; sourceTree = "<group>"; };
 		18238C436A1C6EB565A42784 /* Pods-FreeFi-FreeFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi-FreeFiUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeFi-FreeFiUITests/Pods-FreeFi-FreeFiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		346A64B12555172800129A62 /* Lato */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lato; sourceTree = SOURCE_ROOT; };
 		34E852B4254D103B00531109 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F1670249BA056510A58F258 /* Pods-FreeFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi.debug.xcconfig"; path = "Target Support Files/Pods-FreeFi/Pods-FreeFi.debug.xcconfig"; sourceTree = "<group>"; };
 		76DED5543904C557CF46E544 /* Pods-FreeFi-FreeFiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi-FreeFiUITests.debug.xcconfig"; path = "Target Support Files/Pods-FreeFi-FreeFiUITests/Pods-FreeFi-FreeFiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,7 +54,7 @@
 		BDDFFE602543C7FE0027969C /* FreeFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDFFE632543C7FE0027969C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDFFE652543C7FE0027969C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDDFFE672543C7FE0027969C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDDFFE672543C7FE0027969C /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		BDDFFE6A2543C7FE0027969C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDDFFE6C2543C8010027969C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDFFE6F2543C8010027969C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		BDDFFE572543C7FE0027969C = {
 			isa = PBXGroup;
 			children = (
+				346A64B12555172800129A62 /* Lato */,
 				BDDFFE622543C7FE0027969C /* FreeFi */,
 				BDDFFE792543C8010027969C /* FreeFiTests */,
 				BDDFFE842543C8010027969C /* FreeFiUITests */,
@@ -145,7 +150,7 @@
 			children = (
 				BDDFFE632543C7FE0027969C /* AppDelegate.swift */,
 				BDDFFE652543C7FE0027969C /* SceneDelegate.swift */,
-				BDDFFE672543C7FE0027969C /* ViewController.swift */,
+				BDDFFE672543C7FE0027969C /* HomeScreenViewController.swift */,
 				BDFF6BF4254B7C8A00EE35CB /* LoginViewController.swift */,
 				34E852B4254D103B00531109 /* SignUpViewController.swift */,
 				BDDFFE692543C7FE0027969C /* Main.storyboard */,
@@ -282,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346A64B22555176200129A62 /* Lato in Resources */,
 				BDDFFE702543C8010027969C /* LaunchScreen.storyboard in Resources */,
 				BDDFFE6D2543C8010027969C /* Assets.xcassets in Resources */,
 				BDDFFE6B2543C7FE0027969C /* Main.storyboard in Resources */,
@@ -292,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346A64C42555179700129A62 /* Lato in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346A64C82555179800129A62 /* Lato in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFF6BF5254B7C8A00EE35CB /* LoginViewController.swift in Sources */,
-				BDDFFE682543C7FE0027969C /* ViewController.swift in Sources */,
+				BDDFFE682543C7FE0027969C /* HomeScreenViewController.swift in Sources */,
 				BDDFFE642543C7FE0027969C /* AppDelegate.swift in Sources */,
 				BDDFFE662543C7FE0027969C /* SceneDelegate.swift in Sources */,
 				34E852B5254D103B00531109 /* SignUpViewController.swift in Sources */,

@@ -20,22 +20,28 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+
     }
     
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
-        let first = "Matthew"
-        let last = "Mogannam"
+        let first = firstNameTextField.text!
+        let last = lastNameTextField.text!
+        
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
         
         user["firstName"] = first
         user["lastName"] = last
-        user.username = first + " " + last
-        user.password = "test"
-        user.email = "test3@gmail.com"
+        user.username = email
+        user.password = password
+        user.email = email
         
         
         
-        let alert = UIAlertController(title: "Could not Sign Up", message: "Account already exists for this username.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Could not Sign Up", message: "Account already exists for this email.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
         user.signUpInBackground { (success, error) in
@@ -47,18 +53,14 @@ class SignUpViewController: UIViewController {
             }
         }
         
+}
         
+        
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
-        
-        
-        //let alert = UIAlertController(title: "Could not Sign Up", message: "Account already exists for this username.", preferredStyle: .alert)
-        //alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        
-        
-        }
-        
-        
-        
+    
     
     
     /*
