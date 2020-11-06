@@ -1,0 +1,6 @@
+framework module Pods_FreeFi_FreeFiUITests {
+  umbrella header "Pods-FreeFi-FreeFiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
