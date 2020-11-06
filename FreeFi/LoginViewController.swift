@@ -9,6 +9,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBAction func newUserButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
