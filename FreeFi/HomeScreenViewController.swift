@@ -6,15 +6,35 @@
 //
 
 import UIKit
+import Parse
 
 class HomeScreenViewController: UIViewController {
+    
+    
 
+    @IBOutlet weak var helloLabel: UILabel!
+    
     override func viewDidLoad() {
+        
+       
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let query = PFQuery(className: "User")
+        let name = query.includeKey("firstName")
+        
+        print(name)
+        
+        
        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+       
+        
+        
+        
+       
         
     }
     

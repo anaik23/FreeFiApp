@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import LocalAuthentication
 
 class LoginViewController: UIViewController {
 
@@ -31,9 +32,39 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        
         if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
-            self.performSegue(withIdentifier: "loginSegue", sender: self)
+            
+           
+        let context:LAContext = LAContext()
+            
+            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil){
+                context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Message") { (good, error) in
+                    if good{
+                        print("Fuck yes")
+                        UserDefaults.standard.set(true, forKey: "userLoggedIn")
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                        }
+                        
+                    } else{
+                        print("Try Again")
+                        self.dismiss(animated: true, completion: nil)
+                        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+                       
+                    }
+                    
+                }
         }
+        
+        }
+        
+        
+        
+        
+        
+        
     }
     
    
@@ -51,12 +82,15 @@ class LoginViewController: UIViewController {
             if user != nil {
                 UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                
             } else {
                 self.present(alert, animated: true)
                 print("Error: \(String(describing: error?.localizedDescription))")
                 
             }
         }
+        
+       
     }
     
     

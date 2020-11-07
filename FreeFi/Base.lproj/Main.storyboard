@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmX-ij-U6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="-231"/>
+            <point key="canvasLocation" x="651" y="1582"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="q7y-ad-32M">
@@ -327,6 +327,15 @@
                     <view key="view" contentMode="scaleToFill" id="Hwx-Wv-hUd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gle-p4-xd2">
+                                <rect key="frame" x="27" y="112" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RSM-Vl-kGp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -338,6 +347,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="helloLabel" destination="gle-p4-xd2" id="35M-VC-Rrw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcv-5k-bO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -381,9 +393,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 1" width="127" height="129.5"/>
+        <image name="Group 1" width="84.5" height="86.5"/>
         <image name="Rectangle 105" width="179.5" height="33.5"/>
-        <image name="Rectangle 106" width="209" height="56.5"/>
+        <image name="Rectangle 106" width="139.5" height="38"/>
         <image name="Rectangle 107" width="114" height="33.5"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">
