@@ -15,12 +15,16 @@ class HomeScreenViewController: UIViewController {
        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-
         
     }
+    
+   
 
     @IBAction func onLogOut(_ sender: Any) {
+        
         self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        
     }
     
 }

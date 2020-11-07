@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     
+    
+    
   
     @IBAction func newUserButton(_ sender: Any) {
         self.performSegue(withIdentifier: "signUpSegue", sender: nil)
@@ -21,9 +23,20 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+        //UserDefaults.standard.synchronize()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginSegue", sender: self)
+        }
+    }
+    
+   
         
     @IBAction func onLogin(_ sender: Any) {
         let username = emailField.text!
@@ -36,6 +49,7 @@ class LoginViewController: UIViewController {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil {
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 self.present(alert, animated: true)
