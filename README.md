@@ -26,7 +26,7 @@ This app helps you keep track of your finances. It lets you visualize your spend
 - [X] Users can Login
 - [X] Users can Sign Up
 - [X] Users can Log Out
-- [ ] Users can enter their personal data during Sign Up (Name, email, Password, Location, Age, Salary, Household size)
+- [ ] Users can enter their personal data during Sign Up (Name, email, Password, Age, Salary, Household size)
 - [ ] Users can enter monthly spending data
 - [ ] Users can view how they spent their money in a certain month in a chart format
 
