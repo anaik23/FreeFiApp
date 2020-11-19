@@ -3,6 +3,7 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
+  - CurrencyTextField (2.3)
   - Parse (1.19.0):
     - Parse/Core (= 1.19.0)
   - Parse/Core (1.19.0):
@@ -10,19 +11,22 @@ PODS:
 
 DEPENDENCIES:
   - Charts
+  - CurrencyTextField
   - Parse
 
 SPEC REPOS:
   trunk:
     - Bolts
     - Charts
+    - CurrencyTextField
     - Parse
 
 SPEC CHECKSUMS:
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  CurrencyTextField: 75d8ee80cf245925684b34c9a49ba886f258e2dc
   Parse: 0fb5c7cc7ee5900f2434e24607d0496155b8d04f
 
-PODFILE CHECKSUM: 3d9ce9d7c58d2d40ab9ffdf615c9aee5ece24eac
+PODFILE CHECKSUM: bf09cc4e776f1b95275627c6104409d6f934490c
 
 COCOAPODS: 1.9.3
