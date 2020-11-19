@@ -10,7 +10,8 @@ import Parse
 
 class HomeScreenViewController: UIViewController {
     
-    
+
+    //var users = [PFObject]()
 
     @IBOutlet weak var helloLabel: UILabel!
     
@@ -20,24 +21,15 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let query = PFQuery(className: "User")
-        let name = query.includeKey("firstName")
-        
-        print(name)
-        
-        
-       
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        
+    
        
-        
-        
-        
-       
-        
     }
     
+   // let post = users[indexpath.row]
+    
+    //let comments = (post["comments"] as? [PFObject]) ?? []
    
 
     @IBAction func onLogOut(_ sender: Any) {

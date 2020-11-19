@@ -29,6 +29,9 @@ class LoginViewController: UIViewController {
         //UserDefaults.standard.synchronize()
 
         // Do any additional setup after loading the view.
+        emailField.setBottomBorder()
+        passwordField.setBottomBorder()
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -94,6 +97,8 @@ class LoginViewController: UIViewController {
     }
     
     
+    
+    
 
     /*
     // MARK: - Navigation
@@ -104,5 +109,34 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
+
+extension UITextField {
+  func setBottomBorder() {
+    self.borderStyle = .none
+    self.layer.backgroundColor = UIColor.white.cgColor
+
+    self.layer.masksToBounds = false
+    self.layer.shadowColor = UIColor.lightGray.cgColor
+    self.layer.shadowOffset = CGSize(width: 0.0, height: 2.5)
+    self.layer.shadowOpacity = 1.0
+    self.layer.shadowRadius = 0.0
+  }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+

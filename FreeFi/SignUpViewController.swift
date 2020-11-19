@@ -22,6 +22,11 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        firstNameTextField.setBottomBorder()
+        lastNameTextField.setBottomBorder()
+        emailTextField.setBottomBorder()
+        passwordTextField.setBottomBorder()
+        self.hideKeyboardWhenTappedAround()
 
     }
     
@@ -74,3 +79,9 @@ class SignUpViewController: UIViewController {
     */
 
 }
+
+
+
+
+
+
