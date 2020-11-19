@@ -323,12 +323,12 @@
         <!--Home Screen View Controller-->
         <scene sceneID="q7y-ad-32M">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="wvV-VE-daC" customClass="HomeScreenViewController" customModule="FreeFi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="wvV-VE-daC" customClass="HomeScreenViewController" customModule="FreeFi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hwx-Wv-hUd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPy-Ib-DQl" customClass="PieChartsView" customModule="Charts">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPy-Ib-DQl" customClass="PieChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -351,7 +351,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="pieChartView" destination="SPy-Ib-DQl" id="ccm-Ya-kun"/>
+                        <outlet property="pieChartView" destination="SPy-Ib-DQl" id="sUq-YG-kKm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcv-5k-bO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -396,9 +396,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 1" width="127" height="129.5"/>
+        <image name="Group 1" width="84.5" height="86.5"/>
         <image name="Rectangle 105" width="179.5" height="33.5"/>
-        <image name="Rectangle 106" width="139.5" height="38"/>
+        <image name="Rectangle 106" width="209" height="56.5"/>
         <image name="Rectangle 107" width="114" height="33.5"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">

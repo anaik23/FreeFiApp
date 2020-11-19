@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA4F68B2560C1F30072251B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA4F68A2560C1F30072251B /* Charts.framework */; };
+		1FA4F68C2560C1F30072251B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA4F68A2560C1F30072251B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FA4F68F2560C21E0072251B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA4F68E2560C21E0072251B /* Charts.framework */; };
+		1FA4F6902560C21E0072251B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA4F68E2560C21E0072251B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		346A64B22555176200129A62 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 346A64B12555172800129A62 /* Lato */; };
 		346A64C42555179700129A62 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 346A64B12555172800129A62 /* Lato */; };
 		346A64C82555179800129A62 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 346A64B12555172800129A62 /* Lato */; };
@@ -26,6 +30,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1FA4F6A82560C9490072251B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA4F6A32560C9490072251B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		1FA4F6AA2560C9490072251B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA4F6A32560C9490072251B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
 		BDDFFE772543C8010027969C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDDFFE582543C7FE0027969C /* Project object */;
@@ -42,9 +60,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1FA4F68D2560C1F30072251B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FA4F68C2560C1F30072251B /* Charts.framework in Embed Frameworks */,
+				1FA4F6902560C21E0072251B /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0299653FD29A6D093A7CC30F /* Pods-FreeFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi.release.xcconfig"; path = "Target Support Files/Pods-FreeFi/Pods-FreeFi.release.xcconfig"; sourceTree = "<group>"; };
 		18238C436A1C6EB565A42784 /* Pods-FreeFi-FreeFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi-FreeFiUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeFi-FreeFiUITests/Pods-FreeFi-FreeFiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1FA4F68A2560C1F30072251B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA4F68E2560C21E0072251B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA4F6A32560C9490072251B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master 2/Charts.xcodeproj"; sourceTree = "<group>"; };
 		346A64B12555172800129A62 /* Lato */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lato; sourceTree = SOURCE_ROOT; };
 		34E852B4254D103B00531109 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F1670249BA056510A58F258 /* Pods-FreeFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi.debug.xcconfig"; path = "Target Support Files/Pods-FreeFi/Pods-FreeFi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA4F68F2560C21E0072251B /* Charts.framework in Frameworks */,
 				FEA2C6D797BEBBF0F8E31BAF /* Pods_FreeFi.framework in Frameworks */,
+				1FA4F68B2560C1F30072251B /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA4F6A42560C9490072251B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FA4F6A92560C9490072251B /* Charts.framework */,
+				1FA4F6AB2560C9490072251B /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		590F3ACBA43D94CF3B318B4C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +162,8 @@
 		8E26085DBAE6F7E4AC4F73C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FA4F68E2560C21E0072251B /* Charts.framework */,
+				1FA4F68A2560C1F30072251B /* Charts.framework */,
 				B1887B7FC7D325F27150838F /* Pods_FreeFi.framework */,
 				D44E9BBC84A7067BB0A6B5B5 /* Pods_FreeFi_FreeFiUITests.framework */,
 				F2077143127725D55BA42B0A /* Pods_FreeFiTests.framework */,
@@ -132,6 +181,7 @@
 				BDDFFE612543C7FE0027969C /* Products */,
 				590F3ACBA43D94CF3B318B4C /* Pods */,
 				8E26085DBAE6F7E4AC4F73C4 /* Frameworks */,
+				1FA4F6A32560C9490072251B /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +241,7 @@
 				BDDFFE5D2543C7FE0027969C /* Frameworks */,
 				BDDFFE5E2543C7FE0027969C /* Resources */,
 				69F7486EB4803B940803350C /* [CP] Embed Pods Frameworks */,
+				1FA4F68D2560C1F30072251B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +324,12 @@
 			mainGroup = BDDFFE572543C7FE0027969C;
 			productRefGroup = BDDFFE612543C7FE0027969C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1FA4F6A42560C9490072251B /* Products */;
+					ProjectRef = 1FA4F6A32560C9490072251B /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BDDFFE5F2543C7FE0027969C /* FreeFi */,
@@ -281,6 +338,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1FA4F6A92560C9490072251B /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 1FA4F6A82560C9490072251B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FA4F6AB2560C9490072251B /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 1FA4F6AA2560C9490072251B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BDDFFE5E2543C7FE0027969C /* Resources */ = {
