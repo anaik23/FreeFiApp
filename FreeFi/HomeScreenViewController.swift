@@ -36,6 +36,7 @@ class HomeScreenViewController: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        self.performSegue(withIdentifier: "backToHomeSegue", sender: nil)
         
     }
     
