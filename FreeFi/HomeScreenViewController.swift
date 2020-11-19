@@ -7,12 +7,15 @@
 
 import UIKit
 import Parse
+import Charts
 
 class HomeScreenViewController: UIViewController {
     
     
 
-    @IBOutlet weak var helloLabel: UILabel!
+
+    @IBOutlet weak var pieChartView: PieChartsView!
+    
     
     override func viewDidLoad() {
         
@@ -32,20 +35,20 @@ class HomeScreenViewController: UIViewController {
         
        
         
-        
-        
-       
+    
         
     }
     
    
+   
 
     @IBAction func onLogOut(_ sender: Any) {
+        
         
         self.dismiss(animated: true, completion: nil)
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
         
     }
-    
+
 }
 

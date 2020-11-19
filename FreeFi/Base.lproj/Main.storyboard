@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -328,16 +328,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gle-p4-xd2">
-                                <rect key="frame" x="27" y="112" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPy-Ib-DQl" customClass="PieChartsView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RSM-Vl-kGp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SPy-Ib-DQl" firstAttribute="top" secondItem="RSM-Vl-kGp" secondAttribute="top" id="1G5-qR-ylZ"/>
+                            <constraint firstItem="RSM-Vl-kGp" firstAttribute="trailing" secondItem="SPy-Ib-DQl" secondAttribute="trailing" id="SaI-CS-NUe"/>
+                            <constraint firstItem="SPy-Ib-DQl" firstAttribute="leading" secondItem="RSM-Vl-kGp" secondAttribute="leading" id="afS-rw-jbd"/>
+                            <constraint firstItem="RSM-Vl-kGp" firstAttribute="bottom" secondItem="SPy-Ib-DQl" secondAttribute="bottom" id="uHr-yg-dZd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yj2-5O-Np2">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="c4z-m1-srr">
@@ -348,7 +351,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="helloLabel" destination="gle-p4-xd2" id="35M-VC-Rrw"/>
+                        <outlet property="pieChartView" destination="SPy-Ib-DQl" id="ccm-Ya-kun"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcv-5k-bO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -393,7 +396,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 1" width="84.5" height="86.5"/>
+        <image name="Group 1" width="127" height="129.5"/>
         <image name="Rectangle 105" width="179.5" height="33.5"/>
         <image name="Rectangle 106" width="139.5" height="38"/>
         <image name="Rectangle 107" width="114" height="33.5"/>
