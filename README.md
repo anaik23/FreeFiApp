@@ -148,3 +148,6 @@ This app helps you keep track of your finances. It lets you visualize your spend
 
 ## 11/12/2020 Update - (Add new Expense Functionality)
 <img src='http://g.recordit.co/ARyPGaxD7D.gif' title='FreeFi App Walkthrough' width='' alt='FreeFi App Walkthrough' />
+
+## 11/19/2020 Update - (New Expense Functionality Fully Integrated and Improved Design)
+<img src='http://g.recordit.co/pbRnTM7d8m.gif' title='FreeFi App Walkthrough' width='' alt='FreeFi App Walkthrough' />
