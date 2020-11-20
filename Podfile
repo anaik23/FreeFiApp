@@ -20,6 +20,4 @@ target 'FreeFi' do
 
   pod 'Parse'
 
-  pod 'CurrencyTextField'
-
 end
