@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-FreeFi/Pods-FreeFi-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework
-${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/CurrencyTextField/CurrencyTextField.framework
 ${BUILT_PRODUCTS_DIR}/Parse/Parse.framework

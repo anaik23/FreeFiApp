@@ -16,7 +16,7 @@ target 'FreeFi' do
     # Pods for testing
   end
 
-  pod 'Charts'
+  #pod 'Charts'
 
   pod 'Parse'
 

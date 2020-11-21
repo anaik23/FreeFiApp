@@ -5,6 +5,9 @@
       location = "group:FreeFi.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../../../Desktop/codepath/FreeFiApp/Charts-master 2/Charts.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
