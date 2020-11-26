@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F88A705256F46E5002E1243 /* PastExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88A704256F46E5002E1243 /* PastExpenseViewController.swift */; };
 		1FFF4E272568D71D0036BDAD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF4E262568D71D0036BDAD /* Charts.framework */; };
 		1FFF4E282568D71D0036BDAD /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF4E262568D71D0036BDAD /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FFF4E2A2568D7220036BDAD /* Pods_FreeFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1887B7FC7D325F27150838F /* Pods_FreeFi.framework */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		0299653FD29A6D093A7CC30F /* Pods-FreeFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi.release.xcconfig"; path = "Target Support Files/Pods-FreeFi/Pods-FreeFi.release.xcconfig"; sourceTree = "<group>"; };
 		18238C436A1C6EB565A42784 /* Pods-FreeFi-FreeFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi-FreeFiUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeFi-FreeFiUITests/Pods-FreeFi-FreeFiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F88A704256F46E5002E1243 /* PastExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastExpenseViewController.swift; sourceTree = "<group>"; };
 		1FFF4E262568D71D0036BDAD /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		340600CC25673950009E91CA /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		346A64B12555172800129A62 /* Lato */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lato; sourceTree = SOURCE_ROOT; };
@@ -184,6 +186,7 @@
 				BDDFFE6C2543C8010027969C /* Assets.xcassets */,
 				BDDFFE6E2543C8010027969C /* LaunchScreen.storyboard */,
 				BDDFFE712543C8010027969C /* Info.plist */,
+				1F88A704256F46E5002E1243 /* PastExpenseViewController.swift */,
 			);
 			path = FreeFi;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFF6BF5254B7C8A00EE35CB /* LoginViewController.swift in Sources */,
+				1F88A705256F46E5002E1243 /* PastExpenseViewController.swift in Sources */,
 				BDDFFE682543C7FE0027969C /* HomeScreenViewController.swift in Sources */,
 				BD0F8CAA256746F200AE3C5C /* NewExpenseViewController.swift in Sources */,
 				BDDFFE642543C7FE0027969C /* AppDelegate.swift in Sources */,

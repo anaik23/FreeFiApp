@@ -14,7 +14,7 @@ class HomeScreenViewController: UIViewController {
 
     @IBOutlet weak var pieChartView: PieChartView!
     //var users = [PFObject]()
-
+    var expenses = [PFObject]()
     
     override func viewDidLoad() {
         
@@ -27,10 +27,28 @@ class HomeScreenViewController: UIViewController {
         
         pieChartView.noDataText = "You need to provide data for the chart."
         
+     //   let expense = PFObject(className: "Expenses")
+        //let query = PFQuery(className:"Expenses")
+            // expense["homeExpense"] = PFUser.current()!
+        
+        
+        let query = PFQuery(className:"Expenses")
+        query.includeKey("homeExpense")
+        query.limit = 20
+    
+        query.findObjectsInBackground { [self] (expenses, error) in
+        if expenses != nil {
+            self.expenses = expenses!
+        }
+    }
+        
+        let expense = expenses[0]
+        
+        
         let categories = ["Home expense", "Insurance", "Food/Groceries", "Internet/Cable", "Lifestyle", "Entertainment", "Gas/Autmobile", "Miscellanious"]
-        let userEntries = [3000.87, 500.50, 200.78, 50.98, 100.99, 200.78, 200.20, 300.50]
+        let userEntries = [3333.78, 500.50, 200.78, 50.98, 100.99, 200.78, 200.20, 300.50]
         setChart(dataPoints: categories, values: userEntries)
-       
+       //expense["homeExpense"] as! Double
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -66,12 +84,17 @@ class HomeScreenViewController: UIViewController {
     //let comments = (post["comments"] as? [PFObject]) ?? []
    
 
-    @IBAction func onLogOut(_ sender: Any) {
-        
+    
+    @IBAction func onPastExpense(_ sender: Any) {
+        self.performSegue(withIdentifier: "pastExp", sender: nil)
+    }
+    
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut() //clear Parse cache
         self.dismiss(animated: true, completion: nil)
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
         
-    }
     
+    }
 }
 
