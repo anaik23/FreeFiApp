@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dt8-59-SxK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -465,6 +465,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="nameLabel" destination="zeE-6f-sLe" id="mu6-9V-Zyn"/>
+                        <outlet property="namesLabel" destination="20P-KI-3bF" id="fk2-WI-n3y"/>
                         <outlet property="pieChartView" destination="hbb-2y-8d5" id="f3f-dZ-RMD"/>
                     </connections>
                 </viewController>
@@ -708,9 +710,9 @@
         <!--PastExpenseViewController-->
         <scene sceneID="aV7-Hg-BiF">
             <objects>
-                <tableViewController title="PastExpenseViewController" id="fhy-Qa-z0u" customClass="PastExpenseViewController" customModule="FreeFi" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="PastExpenseViewController" modalPresentationStyle="fullScreen" id="fhy-Qa-z0u" customClass="PastExpenseViewController" customModule="FreeFi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z9k-Re-UlN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -739,15 +741,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2f-4J-1aX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4104" y="1037"/>
+            <point key="canvasLocation" x="4140.579710144928" y="1022.5446428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QhS-Xc-xf2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7C3-Eh-GrZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7C3-Eh-GrZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="koN-UY-wq1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -790,7 +792,7 @@
         <segue reference="9va-CO-NyT"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Group 1" width="253.5" height="258.5"/>
+        <image name="Group 1" width="84.5" height="86.5"/>
         <image name="Line 5" width="340" height="2"/>
         <image name="Rectangle 105" width="179.5" height="33.5"/>
         <image name="Rectangle 106" width="139.5" height="38"/>

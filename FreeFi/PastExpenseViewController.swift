@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Charts
+
 
 class PastExpenseViewController: UITableViewController {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
