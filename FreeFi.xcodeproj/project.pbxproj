@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F2D18402582F48B003DF208 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D183F2582F48B003DF208 /* Data.swift */; };
 		1F88A705256F46E5002E1243 /* PastExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88A704256F46E5002E1243 /* PastExpenseViewController.swift */; };
-		1FFF4E272568D71D0036BDAD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF4E262568D71D0036BDAD /* Charts.framework */; };
-		1FFF4E282568D71D0036BDAD /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF4E262568D71D0036BDAD /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FFF4E2A2568D7220036BDAD /* Pods_FreeFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1887B7FC7D325F27150838F /* Pods_FreeFi.framework */; };
 		1FFF4E2B2568D7220036BDAD /* Pods_FreeFi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1887B7FC7D325F27150838F /* Pods_FreeFi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		340600CD25673950009E91CA /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340600CC25673950009E91CA /* AccountDetailsViewController.swift */; };
@@ -56,7 +54,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1FFF4E282568D71D0036BDAD /* Charts.framework in Embed Frameworks */,
 				1FFF4E2B2568D7220036BDAD /* Pods_FreeFi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -69,7 +66,6 @@
 		18238C436A1C6EB565A42784 /* Pods-FreeFi-FreeFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFi-FreeFiUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeFi-FreeFiUITests/Pods-FreeFi-FreeFiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1F2D183F2582F48B003DF208 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1F88A704256F46E5002E1243 /* PastExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastExpenseViewController.swift; sourceTree = "<group>"; };
-		1FFF4E262568D71D0036BDAD /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		340600CC25673950009E91CA /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		346A64B12555172800129A62 /* Lato */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lato; sourceTree = SOURCE_ROOT; };
 		34E852B4254D103B00531109 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFF4E272568D71D0036BDAD /* Charts.framework in Frameworks */,
 				1FFF4E2A2568D7220036BDAD /* Pods_FreeFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +138,6 @@
 		8E26085DBAE6F7E4AC4F73C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1FFF4E262568D71D0036BDAD /* Charts.framework */,
 				B1887B7FC7D325F27150838F /* Pods_FreeFi.framework */,
 				D44E9BBC84A7067BB0A6B5B5 /* Pods_FreeFi_FreeFiUITests.framework */,
 				F2077143127725D55BA42B0A /* Pods_FreeFiTests.framework */,

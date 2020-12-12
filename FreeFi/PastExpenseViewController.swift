@@ -90,6 +90,6 @@ class PastExpenseViewController: UITableViewController {
     */
 
     @IBAction func onBack(_ sender: Any) {
-        self.performSegue(withIdentifier: "outOfTable", sender: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -13,7 +13,11 @@ class HomeScreenViewController: UIViewController {
     
     var expnses = [String]()
     
-   
+    var count = 0
+    
+    
+    let categories = ["Home expense", "Insurance", "Food/Groceries", "Internet/Cable", "Lifestyle", "Entertainment", "Gas/Autmobile", "Miscellanious"]
+    let userEntries = [10.00, 10.00, 10.00, 10.00, 10.00, 10.00, 10.00, 10.00]
     
     
     @IBOutlet weak var pieChartView: PieChartView!
@@ -25,7 +29,7 @@ class HomeScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         
-       
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -50,15 +54,20 @@ class HomeScreenViewController: UIViewController {
 
        // let test = expense["homeExpense"] as! Double
         
-        let categories = ["Home expense", "Insurance", "Food/Groceries", "Internet/Cable", "Lifestyle", "Entertainment", "Gas/Autmobile", "Miscellanious"]
-        let userEntries = [3333.24, 500.50, 200.78, 50.98, 100.99, 200.78, 200.20, 300.50]
-        setChart(dataPoints: categories, values: userEntries)
+       
+        
+        //setChart(dataPoints: categories, values: userEntries)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         let test = Data()
         expnses = test.expenses
         print(expnses)
+        count += 1
+        
+        if count == 2 {
+            setChart(dataPoints: categories, values: userEntries)
+        }
     }
     
     func getExpense()

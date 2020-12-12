@@ -8,12 +8,17 @@
 import UIKit
 import Parse
 import CurrencyTextField
+import Charts
 
 class NewExpenseViewController: UIViewController{
     
     var expenses = [String]()
+    
+    @IBOutlet weak var pieChartView: PieChartView!
 
     @IBOutlet weak var dateTextField: UITextField!
+    
+    let categories = ["Home expense", "Insurance", "Food/Groceries", "Internet/Cable", "Lifestyle", "Entertainment", "Gas/Autmobile", "Miscellanious"]
     
     
     @IBOutlet weak var homeExpTextField: UITextField!
@@ -102,7 +107,11 @@ class NewExpenseViewController: UIViewController{
         expenses.append(extraExp)
         
         print(expenses)
+        
+        
+        
         /* expense["date"] = date
+        
         
         expense["homeExpense"] = homeExp
         expense["insuranceExpense"] = insurExp
@@ -122,9 +131,8 @@ class NewExpenseViewController: UIViewController{
         }
         */
     
-      //  self.dismiss(animated: true, completion: nil)
-        let sendData = Data()
-        sendData.expenses = self.expenses
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
     
