@@ -26,16 +26,16 @@ This app helps you keep track of your finances. It lets you visualize your spend
 - [X] Users can Login
 - [X] Users can Sign Up
 - [X] Users can Log Out
-- [ ] Users can enter their personal data during Sign Up (Name, email, Password, Age, Salary, Household size)
+- [X] Users can enter their personal data during Sign Up (Name, email, Password, Age, Salary, Household size)
 - [X] Users can enter monthly spending data
-- [ ] Users can view how they spent their money in a certain month in a chart format
+- [X] Users can view how they spent their money in a certain month in a chart format
 
 **Optional Nice-to-have Stories**
 - [ ] Users can view past expense graphs
 - [ ] Users can read and understand what each item means while their filling out their monthly spending data
 - [ ] The app can pull data from their bank/credit card account to automatically fill in their monthly spending amount
 - [X] Allow with Login in with FaceID
-- [ ] User gets a summary of the data produced by their inputs
+- [X] User gets a summary of the data produced by their inputs
 
 ### 2. Screen Archetypes
 
