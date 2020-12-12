@@ -11,7 +11,7 @@ import CurrencyTextField
 
 class NewExpenseViewController: UIViewController{
     
-   
+    var expenses = [String]()
 
     @IBOutlet weak var dateTextField: UITextField!
     
@@ -43,6 +43,8 @@ class NewExpenseViewController: UIViewController{
         
         
     }
+    
+
 
     func setupdatePicker(){
 
@@ -85,14 +87,22 @@ class NewExpenseViewController: UIViewController{
         let date = dateTextField.text!
         
         let homeExp = homeExpTextField.text!
+        expenses.append(homeExp)
         let insurExp = insurExpTextField.text!
+        expenses.append(insurExp)
         let foodExp = foodExpTextField.text!
+        expenses.append(foodExp)
         let lifeExp = lifeExpTextField.text!
+        expenses.append(lifeExp)
         let entertainExp = entertainExpTextField.text!
+        expenses.append(entertainExp)
         let carExp = carExpTextField.text!
+        expenses.append(carExp)
         let extraExp = extraExpTextField.text!
+        expenses.append(extraExp)
         
-        expense["date"] = date
+        print(expenses)
+        /* expense["date"] = date
         
         expense["homeExpense"] = homeExp
         expense["insuranceExpense"] = insurExp
@@ -110,15 +120,14 @@ class NewExpenseViewController: UIViewController{
                 print("failed")
             }
         }
-        
+        */
     
-        
-        
-        
-        
-        
-        
+      //  self.dismiss(animated: true, completion: nil)
+        let sendData = Data()
+        sendData.expenses = self.expenses
     }
+    
+    
     
     @IBAction func onBackButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -137,5 +146,5 @@ class NewExpenseViewController: UIViewController{
 //        // Pass the selected object to the new view controller.
 //    }
 //    */
-
+    
 }
